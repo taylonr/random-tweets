@@ -1,9 +1,10 @@
 defmodule FileTest do
     use ExUnit.Case
     alias RandomTweets.File
-    
-    test "should provide an enum of text" do
-        contents = File.get_contents("test/fixtures/sample_text.txt")
-        assert contents == ["line 1", "line 2"]
+
+    test "Shoul return a string from the file" do
+        line = File.get_line("test/fixtures/sample_text.txt")
+        IO.puts line
+        assert Enum.find_index(["line 1", "line 2", "line 3"], fn x -> x == line end) != nil
     end
 end
