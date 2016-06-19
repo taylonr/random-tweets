@@ -10,6 +10,12 @@ defmodule RandomTweets.CLI do
         """
     end
 
+    def process({filename}) do
+        filename
+        |> RandomTweets.File.get_line
+        |> ExTwitter.update
+    end
+
     def parse_args(args) do
         parse = OptionParser.parse(args, switches: [ help: :boolean],
                                             aliases: [ h: :help ])
