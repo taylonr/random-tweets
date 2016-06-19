@@ -10,5 +10,6 @@ defmodule RandomTweets.File do
         |> File.read!
         |> String.split(~r{\n})
         |> Enum.map(&String.strip/1)
+        |> Enum.filter(fn x -> String.length(x) <= 140 end)
     end
 end
