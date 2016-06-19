@@ -27,6 +27,8 @@ defmodule RandomTweets.Mixfile do
   #
   # Type "mix help deps" for more examples and options
   defp deps do
-    [{:mix_test_watch, "~> 0.2", only: :dev}]
+    [{:mix_test_watch, "~> 0.2", only: :dev},
+    {:oauth, github: "tim/erlang-oauth"},
+    {:extwitter, "~> 0.7.1"}]
   end
 end
