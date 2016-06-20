@@ -7,6 +7,7 @@ defmodule RandomTweets.Mixfile do
      elixir: "~> 1.2",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
+     escript: escript,
      deps: deps]
   end
 
@@ -14,7 +15,12 @@ defmodule RandomTweets.Mixfile do
   #
   # Type "mix help compile.app" for more information
   def application do
-    [applications: [:logger]]
+    [ mod: {RandomTweets, []},
+      applications: [:logger, :quantum, :oauth, :extwitter, :poison]]
+  end
+
+  def escript do
+    [main_module: RandomTweets]
   end
 
   # Dependencies can be Hex packages:
@@ -29,6 +35,8 @@ defmodule RandomTweets.Mixfile do
   defp deps do
     [{:mix_test_watch, "~> 0.2", only: :dev},
     {:oauth, github: "tim/erlang-oauth"},
-    {:extwitter, "~> 0.7.1"}]
+    {:extwitter, "~> 0.7.1"},
+    {:quantum, "~> 1.7"},
+    {:exrm, "~> 1.0"}]
   end
 end

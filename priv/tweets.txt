@@ -1,0 +1,10 @@
+Wouldn't it be great to make your markup more readable? Learn how to do so with @SemanticUI on my @pluralsight course https://goo.gl/gPhLLi
+Do you develop for the web & struggle wrapping your head around CSS? Check out @semanticui. Learn more @pluralsight: https://goo.gl/gPhLLi
+What do cholera & the space shuttle Challenger have in common with software? Find out in Professionalism for Developer http://goo.gl/PTsAsC
+As developers, we've got serious responsibilities.  We need to learn from other professions!  http://goo.gl/PTsAsC
+Want to automate UI testing for Angular? Checkout Protractor on @pluralsight http://goo.gl/f1MSJD
+Writing Angular applications? You should be using Protractor! http://goo.gl/f1MSJD
+Are you practiving TDD? You should be! Learn how to do so on a real-world application http://goo.gl/XUoRqM
+Ever get tired of simple TDD examples? Come check out TDD on a full stack app http://goo.gl/XUoRqM
+Thinking about looking for a new job anytime soon? Learn some ways to stand out: http://goo.gl/zLyc8T
+What are some things you could be doing to make yourself stand out on the job market? http://goo.gl/XUoRqM

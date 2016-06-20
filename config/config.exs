@@ -11,6 +11,10 @@ use Mix.Config
 # You can configure for your application as:
 #
 #     config :random_tweets, key: :value
+config :quantum, cron: [
+    # Every minute
+    "30 13 1,15 * *": {RandomTweets.CLI, :process}
+]
 #
 # And access this configuration in your application as:
 #
