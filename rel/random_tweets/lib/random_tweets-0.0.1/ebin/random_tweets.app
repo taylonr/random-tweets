@@ -1,9 +1,0 @@
-{application,random_tweets,
-             [{registered,[]},
-              {description,"random_tweets"},
-              {vsn,"0.0.1"},
-              {modules,['Elixir.RandomTweets','Elixir.RandomTweets.CLI',
-                        'Elixir.RandomTweets.File']},
-              {mod,{'Elixir.RandomTweets',[]}},
-              {applications,[kernel,stdlib,elixir,logger,quantum,oauth,
-                             extwitter,poison]}]}.
