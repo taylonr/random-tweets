@@ -1,1 +1,1 @@
-web: MIX_ENV=prod mix run --no-halt
+web: rel/random_tweets/bin/random_tweets console

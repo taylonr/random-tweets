@@ -14,6 +14,7 @@ use Mix.Config
 config :quantum, cron: [
     # Every minute
     "30 13 1,15 * *": {RandomTweets.CLI, :process}
+    #"* * * * *": {RandomTweets.CLI, :process}
 ]
 #
 # And access this configuration in your application as:
