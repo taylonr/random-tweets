@@ -10,13 +10,11 @@ defmodule RandomTweets do
 
     def start(_type, args) do
         configure_twitter()
-        #RandomTweets.CLI.run(args)
         Supervisor.start_link [], strategy: :one_for_one
     end
 
     def main(args) do
         configure_twitter()
-        #RandomTweets.CLI.run(args)
         Supervisor.start_link [], strategy: :one_for_one
     end
 end

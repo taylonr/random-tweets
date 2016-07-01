@@ -13,7 +13,8 @@ use Mix.Config
 #     config :random_tweets, key: :value
 config :quantum, cron: [
     # Every minute
-    "30 13 1,15 * *": {RandomTweets.CLI, :process}
+    #"30 13 1,15 * *": {RandomTweets.CLI, :process}
+    "50 22 2,*/12 * *": {RandomTweets.CLI, :process}
     #"* * * * *": {RandomTweets.CLI, :process}
 ]
 #
