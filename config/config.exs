@@ -14,7 +14,7 @@ use Mix.Config
 config :quantum, cron: [
     # Every minute
     #"30 13 1,15 * *": {RandomTweets.CLI, :process}
-    "07 21 2,*/12 * *": {RandomTweets.CLI, :process},
+    "10 21 2,*/12 * *": {RandomTweets.CLI, :process},
     "25,55 * * * *": {RandomTweets.Heartbeat, :alive}
 ]
 #
