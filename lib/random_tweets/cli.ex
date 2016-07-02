@@ -6,13 +6,12 @@ defmodule RandomTweets.CLI do
         |> process
     end
 
+    def process(), do: process(@default_file)
     def process(:help) do
         """
         usage: random_tweets filename
         """
     end
-
-    def process(nil), do: process(@default_file)
     def process({filename}) do
         Path.join("#{:code.priv_dir(:random_tweets)}", filename)
         |> RandomTweets.File.get_line
