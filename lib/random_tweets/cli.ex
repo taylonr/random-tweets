@@ -6,7 +6,7 @@ defmodule RandomTweets.CLI do
         |> process
     end
 
-    def process() do
+    def process do
         Path.join("#{:code.priv_dir(:random_tweets)}", @default_file)
         |> RandomTweets.File.get_line
         |> ExTwitter.update
