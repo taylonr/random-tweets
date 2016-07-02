@@ -1,1 +1,1 @@
-queue mix run --no-halt
+queue MIX_ENV=prod mix release && rel/random_tweets/bin/random_tweets start

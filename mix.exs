@@ -9,7 +9,6 @@ defmodule RandomTweets.Mixfile do
      start_permanent: Mix.env == :prod,
      escript: escript,
      deps: deps,
-     heroku: heroku,
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod]
   end
@@ -40,13 +39,6 @@ defmodule RandomTweets.Mixfile do
     {:oauth, github: "tim/erlang-oauth"},
     {:extwitter, "~> 0.7.1"},
     {:quantum, "~> 1.7"},
-    {:exrm, "~> 1.0"},
-    {:exrm_heroku, "~> 0.1.0"}]
-  end
-
-  def heroku do
-    [app: "calm-refuge-94656", # Heroku app name, required
-     slug_command: "slug", # Command to execute during release. Optional, by default set to "slug" command
-     process_type: "web"] # Process Type for Procfile entry. Optional, by default set to "web"
+    {:exrm, "~> 1.0"}]
   end
 end
