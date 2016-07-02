@@ -5,14 +5,13 @@ defmodule RandomTweets.CLI do
         parse_args(argv)
         |> process
     end
-
-    def process(), do: process(@default_file)
+    
     def process(:help) do
         """
         usage: random_tweets filename
         """
     end
-    def process({filename}) do
+    def process({filename} \\ @default_file) do
         Path.join("#{:code.priv_dir(:random_tweets)}", filename)
         |> RandomTweets.File.get_line
         |> ExTwitter.update
