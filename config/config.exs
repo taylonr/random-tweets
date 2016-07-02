@@ -15,7 +15,7 @@ config :quantum, cron: [
     # Every minute
     #"30 13 1,15 * *": {RandomTweets.CLI, :process}
     "30 20 2,*/12 * *": {RandomTweets.CLI, :process},
-    "27 * * * *": {RandomTweets.Heartbeat, :alive}
+    "25 * * * *": {RandomTweets.Heartbeat, :alive}
 ]
 #
 # And access this configuration in your application as:
