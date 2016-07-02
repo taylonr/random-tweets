@@ -1,6 +1,6 @@
 # RandomTweets
 
-**TODO: Add description**
+This tweets out a random tweet selected from the `tweets.txt` file. It does this on a schedule, using Quantum's cron scheduler. Current settings are 1, 2, 13 and 25th of each month at 18:10UTC
 
 ## Installation
 
