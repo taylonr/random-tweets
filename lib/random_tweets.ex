@@ -13,8 +13,8 @@ defmodule RandomTweets do
         Supervisor.start_link [], strategy: :one_for_one
     end
 
-    def main(args) do
-        configure_twitter()
-        Supervisor.start_link [], strategy: :one_for_one
-    end
+    #def main(args) do
+    #    configure_twitter()
+    #    Supervisor.start_link [], strategy: :one_for_one
+    #end
 end
