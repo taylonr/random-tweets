@@ -8,3 +8,5 @@ Are you practiving TDD? You should be! Learn how to do so on a real-world applic
 Ever get tired of simple TDD examples? Come check out TDD on a full stack app http://goo.gl/XUoRqM
 Thinking about looking for a new job anytime soon? Learn some ways to stand out: http://goo.gl/zLyc8T
 What are some things you could be doing to make yourself stand out on the job market? http://goo.gl/XUoRqM
+Have you wanted to learn more about functional programming? Check out Getting Started With Elixir https://goo.gl/megm6I
+Learn how the basics of #Elixir while also writing an application with my course Getting Started With Elixir https://goo.gl/megm6I
