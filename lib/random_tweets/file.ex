@@ -12,4 +12,10 @@ defmodule RandomTweets.File do
         |> Enum.map(&String.strip/1)
         |> Enum.filter(fn x -> String.length(x) <= 140 end)
     end
+
+    def reverse(l) do
+        reverse(l, [])
+    end
+    def reverse([], reversed), do: reversed
+    def reverse([head | tail], reversed), do: reverse(tail, [head | reversed])
 end

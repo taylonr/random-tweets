@@ -4,3 +4,5 @@ Professional: http://goo.gl/PTsAsC
 Job: http://goo.gl/zLyc8T
 Protractor: http://goo.gl/f1MSJD
 Elixir: https://goo.gl/megm6I
+Phoenix: https://goo.gl/V6nLQp
+FPJS: https://goo.gl/hc3Uh2
